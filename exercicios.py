@@ -1,3 +1,5 @@
+import math
+
 # #### Inteiros (`int`)
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
@@ -64,9 +66,9 @@
 
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
-#raio = float(input("Insira o raio do círuclo: "))
-#area = (raio ** 2)*3.14
-#print(area)
+raio = float(input("Insira o raio do círuclo: "))
+area = (raio ** 2)*math.pi
+print(area)
 
 # #### Strings (`str`)
 
@@ -135,10 +137,10 @@
 
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
-num1 = int(input("Insira um número: "))
-num2 = int(input("Insira um número: "))
-op_equal = num1 != num2
-print("Os números são diferentes? ", op_equal)
+#num1 = int(input("Insira um número: "))
+#num2 = int(input("Insira um número: "))
+#op_equal = num1 != num2
+#print("Os números são diferentes? ", op_equal)
 
 # #### try-except e if
 
