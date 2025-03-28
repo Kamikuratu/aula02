@@ -66,9 +66,9 @@ import math
 
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
-raio = float(input("Insira o raio do círuclo: "))
-area = (raio ** 2)*math.pi
-print(area)
+#raio = float(input("Insira o raio do círuclo: "))
+#area = (raio ** 2)*math.pi
+#print(area)
 
 # #### Strings (`str`)
 
@@ -145,7 +145,82 @@ print(area)
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+
+#try:
+#    temp_celsius = float(input("Insira a temperatura em graus Celsius: "))
+#    temp_fahrenheit = (temp_celsius * (9/5))+32
+#    print(temp_fahrenheit)
+#except ValueError:
+#    print("O valor informado não é um número!")
+
 # 22: Verificador de Palíndromo
+
+#string = input("Insira uma palavra que deseja checar se é um palíndromo: ")
+#if isinstance(string, str):
+#    formatado = string.replace(" ", "").lower()
+#    if string == string[::-1]:
+#        print("A palavra é um palíndromo!")
+#    else:
+#        print("A palavra não é um palíndromo!")
+#else:
+#    print("Você não informou uma palavra!")
+
 # 23: Calculadora Simples
+#try:
+#    numero1 = float(input("Insira um número: "))
+#    numero2 = float(input("Insira outro número: "))
+#    operador = input("Qual operação você deseja realizar?: ")
+#
+#    if operador == "+":
+#        adicao = numero1 + numero2
+#        print("O resultado da soma é: ", adicao)
+#    elif operador == "-":
+#        subtracao = numero1 - numero2
+#        print("O resultado da subtração é: ", subtracao)
+#    elif operador == "*":
+#        multiplicacao = numero1 * numero2
+#        print("O resultado da multiplicação é: ", multiplicacao)
+#    elif operador == "/":
+#        try:
+#            divisao = numero1 * numero2
+#            print("O resultado da divisão é: ", divisao)
+#        except ZeroDivisionError:
+#            print("Não é possível dividir por zero!")
+#    else:
+#        print("Você não informou uma operação válida!")
+#except ValueError:
+#    print("Você não informou um número válido!")
+
+
 # 24: Classificador de Números
+
+#try:
+#    numero = int(input("Digite um número: "))
+#    if numero == 0:
+#        print("O número é zero!")
+#    elif numero > 0:
+#        if numero%2 == 0:
+#            print("O número é positivo e par!")
+#        else:
+#            print("O número é positivo e ímpar!")
+#    else:
+#        if numero%2 == 0:
+#            print("O número é negativo e par!")
+#        else:
+#            print("O número é negativo e ímpar!")
+#except ValueError:
+#    print("Você não informou um número válido!")
+
+
 # 25: Conversão de Tipo com Validação
+
+lista = input("Insira uma lista de números inteiros separados por vírgula: ")
+lista_str = lista.split(",")
+lista_int = []
+
+try:
+    for num in lista_str:
+        lista_int.append(int(num.strip()))
+    print("A lista de números inteiro é: ", lista_int)
+except ValueError:
+    print("Você inseriu algum número inválido!")
