@@ -214,13 +214,13 @@ import math
 
 # 25: Conversão de Tipo com Validação
 
-lista = input("Insira uma lista de números inteiros separados por vírgula: ")
-lista_str = lista.split(",")
-lista_int = []
+#lista = input("Insira uma lista de números inteiros separados por vírgula: ")
+#lista_str = lista.split(",")
+#lista_int = []
 
-try:
-    for num in lista_str:
-        lista_int.append(int(num.strip()))
-    print("A lista de números inteiro é: ", lista_int)
-except ValueError:
-    print("Você inseriu algum número inválido!")
+#try:
+#    for num in lista_str:
+#        lista_int.append(int(num.strip()))
+#    print("A lista de números inteiro é: ", lista_int)
+#except ValueError:
+#    print("Você inseriu algum número inválido!")
